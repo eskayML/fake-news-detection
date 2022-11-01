@@ -31,9 +31,10 @@ model = Pipeline([
     ('estimator', MultinomialNB())
 ])
 
-print(df['title'][:5])
+# view a sample from the dataset
+# print(df['title'][:5])
 
-
+# fit the model
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 print(model.score(X_test, y_test))
