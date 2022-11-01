@@ -10,6 +10,8 @@ button  = st.button('Predict')
 
 if button:
     prediction = model.predict([text])[0]
-    color = 'red' if prediction =='FAKE' else 'green'
     st.write('OutCome of Prediction')
     st.write(f"## {prediction} ")
+
+
+
